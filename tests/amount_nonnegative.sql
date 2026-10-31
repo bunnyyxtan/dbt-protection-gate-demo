@@ -1,1 +1,1 @@
-select * from {{ ref('orderz') }} where amount < 0
+select * from {{ ref('orders') }} where amount < -1000
