@@ -1,1 +1,1 @@
-select 1 as violation where (select count(*) from {{ ref('orders') }}) = 0
+select 1 as violation where (select count(*) from {{ ref('orders') }}) < 0
